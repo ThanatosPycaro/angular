@@ -1,0 +1,51 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="nome">Nome completo</label>
+      <input type="text" formControlName="nome" id="nome">
+    </div>
+    <div class="form-group">
+      <label for="dataNascimento">Data de nascimento</label>
+      <input type="date" formControlName="dataNascimento" id="dataNascimento">
+    </div>
+    <div class="form-group">
+      <label for="cpf">CPF</label>
+      <input type="text" formControlName="cpf" id="cpf">
+    </div>
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input type="email" formControlName="email" id="email">
+    </div>
+    <div class="form-group">
+      <label for="telefone">Telefone</label>
+      <input type="tel" formControlName="telefone" id="telefone">
+    </div>
+    <div class="form-group">
+      <label for="cep">CEP</label>
+      <input type="text" formControlName="cep" id="cep" (blur)="buscarCep()">
+    </div>
+    <div class="form-group">
+      <label for="rua">Rua</label>
+      <input type="text" formControlName="rua" id="rua">
+    </div>
+    <div class="form-group">
+      <label for="numero">Número</label>
+      <input type="text" formControlName="numero" id="numero">
+    </div>
+    <div class="form-group">
+      <label for="complemento">Complemento</label>
+      <input type="text" formControlName="complemento" id="complemento">
+    </div>
+    <div class="form-group">
+      <label for="bairro">Bairro</label>
+      <input type="text" formControlName="bairro" id="bairro">
+    </div>
+    <div class="form-group">
+      <label for="cidade">Cidade</label>
+      <input type="text" formControlName="cidade" id="cidade">
+    </div>
+    <div class="form-group">
+      <label for="estado">Estado</label>
+      <input type="text" formControlName="estado" id="estado">
+    </div>
+    <button type="submit">Enviar</button>
+  </form>
